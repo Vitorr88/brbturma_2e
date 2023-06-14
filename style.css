@@ -1,17 +1,71 @@
-@import url("style/header.css");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 
 :root{
-    --cor-de-fundo: #EBECEE;
-    --branco: #FFFFFF;
+    --cor-de-fundo:#EBECEE;
+    --branco: white;
 }
 
 body{
     background-color: var(--cor-de-fundo);
 }
 
-body{
-    background-color: var(--cor-de-fundo);
-    font-family: var(--fonte-principal);
-    font-size: 16px;
-    font-weight: 400;
+.container__imagem{
+    padding: 1em;
+}
+
+.cabecalho{
+    background-color: var(--branco);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.cabecalho__menu-hunburger{
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    background-image: url('imagens/Menu.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.container{
+    display:flex;
+    align-items: center;
+}
+
+.oculto {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 1s;
+    width: 0;
+}
+
+.aberto {
+    color: black;
+    opacity: 1;
+    width: 350px;
+    max-width: 500px;
+    background-color: var(--branco);
+}
+
+.conteudo ul li{
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.lis{
+    color: #104064;
+}
+
+.categoria{
+    color: #fc6921;
 }
