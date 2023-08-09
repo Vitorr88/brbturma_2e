@@ -27,7 +27,7 @@ body{
     padding: 0 40px;
 }
 
-.cabecalho__menu-hunburger{
+.cabecalho_menu-hunburger{
     cursor: pointer;
     width: 24px;
     height: 24px;
@@ -226,6 +226,7 @@ ul,li{
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .tópicos__item{
     margin: 2em 0.5em;
 }
@@ -262,6 +263,11 @@ hr{
 }
 
 .contato__titulo{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contato__texto{
     font-weight: 300;
     margin: 1em 0;
 }
@@ -277,5 +283,6 @@ hr{
 .contato__email::placeholder{
     font-family: var(--fonte-principal);
     color: var(--azul);
-    background: url();
+    background: url(../vitor/img/envelope.svg) no-repeat;
+    padding-left: 2em;
 }
